@@ -23,7 +23,7 @@ header .navbar {
 	padding: 30px 0;
 }
 
-header .navbar-default .navbar-collapse {
+header .navbar-default {
 	background-color: transparent;
 	border: none;
 }
