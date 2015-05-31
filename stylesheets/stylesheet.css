@@ -26,7 +26,6 @@ header .navbar {
 header .navbar-default .navbar-collapse {
 	background-color: transparent;
 	border: none;
-	border-color: transparent;
 }
 
 header .navbar-default .navbar-nav a {
