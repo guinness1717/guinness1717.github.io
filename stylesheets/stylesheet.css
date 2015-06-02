@@ -52,6 +52,13 @@ header .navbar-default .navbar-nav .active a:hover {
 	text-shadow: none;
 }
 
+@media only screen
+and (max-width: 768px) {
+	header .navbar-collapse.in {
+		background-color: rgba(0,0,0, .5);
+	}
+}
+
 /** Navbar Brand **/
 header .navbar-brand {
 	background-repeat: no-repeat;
