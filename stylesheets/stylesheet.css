@@ -76,17 +76,39 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
 }
 
-/** Footer Navigation **/
-
-footer .navbar-default {
-	background: transparent;
-}
-
+/** Page **/
 .page {
 	padding: 50px 0;
 }
 
-.page h2 {
+.page h2, h3 {
 	text-align: center;
 	margin-bottom: 30px;
+}
+
+/** Page -- About **/
+#about {
+	background-color: #585858;
+	background-image: linear-gradient(to bottom, #C3C3BD, #454541);
+	border-top: 20px solid rgba(50, 54, 56, .5);
+}
+
+/** Page -- Portfolio **/
+.portfolio {
+	margin: 20px 0;
+	text-align: center;
+}
+
+@media only screen
+and (min-width: 450px)
+and (max-width: 768px) {
+	.img-responsive {
+		margin: 0 auto;
+	}
+}
+
+/** Footer Navigation **/
+
+footer .navbar-default {
+	background: transparent;
 }
