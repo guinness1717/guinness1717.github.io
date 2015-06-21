@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Oxygen:700' rel='stylesheet' type='text/css'>
     <title>Guinness1717.GitHub.io by guinness1717</title>
   </head>
 
@@ -26,7 +27,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div> <!-- Collapse Navbar Collapse -->
@@ -61,12 +62,12 @@
       </div> <!-- Content Container -->
     </div> <!-- About Page -->
 
-            <div class="page" id="portfolio">
-            <div class="content container">
-              <h2 class="portfolio">Portfolio</h2>
+            <div class="page" id="skills">
+            <div class=" content container">
+              <h2 class="skills">Skills</h2>
               <div class="col-md-4">
                 <h3>Excellent</h3>
-                <div class="row">
+                <div class="row" id="excellent">
                 <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/HTML.png" alt="HTML">
                 <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/MWord.png" alt="MicroWord">
             </div> <!-- Row -->
@@ -79,7 +80,7 @@
 
               <div class="col-md-4">
                 <h3>Intermediate</h3>
-                <div class="row">
+                <div class="row" id="intermediate">
                   <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/Ai.png" alt="Ai">
                   <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/Joomla.png" alt="Joomla!">
                 </div> <!-- Row -->
@@ -92,7 +93,7 @@
 
               <div class="col-md-4">
                 <h3>Basic</h3>
-                <div class="row">
+                <div class="row" id="basic">
                   <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/JS.png" alt="JavaScript">
                   <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/Ps.png" alt="Photoshop">
                 </div> <!-- Row -->
@@ -101,17 +102,54 @@
                   <img class="col-md-6 col-sm-6 img-responsive" src="file:///Users/guinness17/Pictures/Website/Atom.png" alt="Atom">
                 </div> <!-- Row -->
               </div> <!-- Basic -->
-            </div> <!--content container: Work -->
+            </div> <!-- Container: Work -->
           </div> <!-- Portfolio Page -->
 
               <div class="page" id="contact">
               <div class="content container">
-                <div class="col-sm-6">
+                <div class="col-lg-12">
                   <h3>Contact</h3>
-                </div> <!-- Contact Sheet Left -->
-                <div class="col-sm-6">
-                <h3>Other</h3>
-              </div> <!-- Contact Page Right -->
+                  <form class="form-horizontal" role="form" method="post" action="index.php">
+                    <div class="form-group">
+                      <label for="name" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Name" value="">
+                      </div> <!-- Content Space Name -->
+                    </div> <!-- Form Group Name -->
+
+                    <div class="form-group">
+                      <label for="email" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="example@domain.com" value="">
+                      </div> <!-- Content Space Email -->
+                    </div> <!-- Form Group Email -->
+
+                    <div class="form-group">
+                      <label for="message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="4" name="message"></textarea>
+                      </div> <!-- Content Space Message -->
+                    </div> <!-- Form Group Message -->
+
+                    <div class="form-group">
+                      <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                      </div> <!-- Content Space Captcha -->
+                    </div> <!-- Form Group Captcha -->
+
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-2">
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                      </div> <!-- Content Space Submit Btn -->
+                    </div> <!-- Form Group Submit Btn -->
+
+                    <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-2">
+                      </div>
+                    </div> <!-- Form Group Button -->
+                  </form> <!-- Form Content -->
+                </div> <!-- Contact Sheet -->
               </div> <!-- Content Container -->
             </div> <!-- Contact Page -->
 

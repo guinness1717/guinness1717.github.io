@@ -1,20 +1,25 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:600|Cabin:600italic|Oxygen);
-
 .body {
-	font-family: "Cabin", sans-serif;
-	font-weight: 600;
+	font-family: 'Arvo', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	position: relative;
+}
+
+ul li {
+	font-family: 'Arvo', sans-serif;
+	font-weight: 400;
 	font-size: 2em;
 	position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Oxygen", sans-serif;
-	font-weight: 100;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
 	margin: 0;
 }
 
 img {
-	max-width: 200px;
+	max-width: 300px;
 }
 
 /** Header Navigation **/
@@ -76,6 +81,13 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
 }
 
+/** Top **/
+
+img .center-fit {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 /** Page **/
 .page {
 	padding: 50px 0;
@@ -88,15 +100,22 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 /** Page -- About **/
 #about {
-	background-color: #585858;
-	background-image: linear-gradient(to bottom, #C3C3BD, #454541);
-	border-top: 20px solid rgba(50, 54, 56, .5);
+ background-color: #F6F6F6;
 }
 
 /** Page -- Portfolio **/
-.portfolio {
+.skills {
 	margin: 20px 0;
 	text-align: center;
+}
+
+#skills {
+	background-color: #E6E6E6;
+}
+
+#skills .row .img .img-responsive {
+	background-color: #F2F2F2;
+	padding: 0px;
 }
 
 @media only screen
@@ -106,6 +125,10 @@ and (max-width: 768px) {
 		margin: 0 auto;
 	}
 }
+
+/** Page -- Contact **/
+
+
 
 /** Footer Navigation **/
 
