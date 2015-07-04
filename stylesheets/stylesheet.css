@@ -26,6 +26,7 @@ img {
 
 header .navbar {
 	padding: 30px 0;
+	transition: all .5s ease-out;
 }
 
 header .navbar-default {
@@ -64,6 +65,33 @@ and (max-width: 768px) {
 	}
 }
 
+/** Nav Inbody **/
+
+header .inbody {
+	background: rgba(40, 38, 44, .9);
+}
+
+header .navbar.inbody {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+	padding-top: 10px;
+}
+
+header .navbar.inbody .navbar-brand {
+	background-size: 43px;
+	background-position: top-left;
+	margin-top: 5px;
+	padding-bottom: 0;
+	margin-left: 10px;
+}
+
+header .inbody .navbar-brand span.subhead {
+	display: none;
+}
+
 /** Navbar Brand **/
 header .navbar-brand {
 	background-repeat: no-repeat;
@@ -88,6 +116,43 @@ img .center-fit {
 	max-height: 100%;
 }
 
+/** Carousel Fade **/
+.carousel.fade {
+	opacity: 1;
+}
+
+.carousel.fade .item {
+	transition: opacity ease-out .7s;
+	left: 0;
+	opacity: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	display: block;
+}
+
+.carousel.fade .item:first-child {
+	top: auto;
+	opacity: 1;
+	position: relative;
+}
+
+.carousel.fade .item.active {
+	opacity: 1;
+}
+
+.carousel-control {
+	opacity: 0;
+}
+
+#featured .item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+}
+
 /** Page **/
 .page {
 	padding: 50px 0;
@@ -100,7 +165,14 @@ img .center-fit {
 
 /** Page -- About **/
 #about {
- background-color: #F6F6F6;
+	background-color: #F6F6F6;
+	font-family: FZLTXHK--GBK1-0;
+	font-size: 28px;
+	color: #FFFFFF;
+	line-height: 36px;
+	opacity: 0.47;
+	background: #82BB5D;
+	text-align: center;
 }
 
 /** Page -- Portfolio **/
@@ -135,3 +207,8 @@ and (max-width: 768px) {
 footer .navbar-default {
 	background: transparent;
 }
+
+/** CSS Attributes **/
+/* Mask: */
+background: #D8D8D8;
+/* baseball: */
